@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "244306931497",
+    "project_id": "cattle-care-3cc3e",
+    "storage_bucket": "cattle-care-3cc3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244306931497:android:d3358ca6521ab08c3d5138",
+        "android_client_info": {
+          "package_name": "com.example.cattle_care_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3fsfhPn0w5ptfDXm3tLWiU-719lGyvP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

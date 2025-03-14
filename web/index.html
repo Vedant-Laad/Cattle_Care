@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="cattle_care_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.ico">
+
+  <title>cattle_care_app</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Style for the splash screen */
+    #splash-screen {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white; /* Change background color as needed */
+      z-index: 9999; /* Keep the splash screen on top */
+    }
+
+    #splash-screen img {
+      width: 100%; /* Make the logo take full width */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 400px; /* Set a max-width to prevent excessive scaling */
+      /* Optionally, you can add padding or margin if needed */
+    }
+  </style>
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <img src="assets/logo.png" alt="Cattle Care Logo"> <!-- Splash logo -->
+  </div>
+
+  <script>
+    // Hide the splash screen after Flutter loads
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const splashScreen = document.getElementById('splash-screen');
+        splashScreen.style.display = 'none';
+      }, 1000); // Adjust time as needed
+    });
+  </script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
